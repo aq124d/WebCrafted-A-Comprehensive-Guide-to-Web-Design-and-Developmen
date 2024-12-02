@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <!-- Meta tags provide information about the document -->
+    <meta charset="UTF-8">
+    <meta name ="description" content=" History of the Internet">
+    <meta namer="author" content="Aamina Quddusiyyah">
+    <meta name ="keywords" content="Internet Protocol">
+    <meta name ="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Internet Protocol</title>
+    <link rel="stylesheet" type="text/css" href="assets/CSS/style.css"><!-- creating a link to the CSS sheet -->
+
+    <style>
+ /* Internal CSS styles specific to this page */
+    video{
+        display: flex;
+        float:right;
+        border: 2px solid white;
+        padding: 3px;
+        margin: 10px;
+        } 
+
+    img{
+        height:225px;
+        width: 315px;
+    }
+
+    </style>
+    
+</head>
+<body>
+     <!-- Header Section -->
+    <header>
+        <h1>Internet Protocol</h1>
+            <dl>
+                <dt><a href="index.html">Home</a></dt>
+                <dt><a href="history.html">History</a></dt>
+                <dt><a href="protocols.html">Protocols</a></dt>
+                <dt><a href="tools.html">Tools</a></dt>
+                <dt><a href="reference.html">Reference</a></dt>
+            </dl>
+    </header>
+ <!-- Main Content Section -->
+    <main>
+        <h3> ‣ Introduction</h3>
+        <!-- adding images -->
+        <img src="assets/media/img2.webp" alt="int"> 
+        <!-- Explanation of the introduction content -->
+        <p>Data packets must be addressed and routed according to a set of guidelines known as the Internet Protocol (IP) in order for them to pass through networks and reach their intended location.
+        The tiny units of data that travel across the Internet are referred to as packets. 
+        Every packet has IP information attached to it, which routers use to direct packets to the appropriate location. 
+        Data is sent to the required location when packets are routed to the IP address associated with each device or domain that connects to the Internet.<br>
+        Depending on whatever transport protocol is used with IP, the packets are treated differently once they reach their destination. TCP and UDP are the most used transport protocols.[11]</p>  
+        
+        <h3> ‣ Transmission Control Protocol (TCP)</h3>
+        <!-- Video element explaining TCP -->
+        <video width="320" height="240" controls>
+        <source src="assets/media/TCP Connection Animation.mp4 " type="video/mp4">    
+        Your browser does not support the video tag.
+        </video>
+           <!-- Explanation of Transmission Control Protocol (TCP) -->
+        <p>Transmission Control Protocol (TCP) is a communications standard that enables application programs and computing devices to exchange messages over a network. It is designed to send packets across the internet and ensure the successful delivery of data and messages over networks.
+        TCP is one of the basic standards that define the rules of the internet
+        TCP organizes data so that it can be transmitted between a server and a client. It guarantees the integrity of the data being communicated over a network. Before it transmits data, TCP establishes a connection between a source and its destination, which it ensures remains live 
+        until communication begins. It then breaks large amounts of data into smaller packets, while ensuring data integrity is in place throughout the process.        
+        There are three phases of TCP 3-way handshake. So, what are the three phases of tcp three-way handshake? These phases (messages) are given below: </p>
+        <!-- List of TCP handshake phases -->
+        <ul>
+            <li>SYN</li>
+            <li>SYN ACK</li>
+            <li> ACK</li>
+        </ul>  
+                
+        <p>There are 9 bits flags area in TCP Header. Here, the SYN and ACK bits in the TCP Header are set to 0 or 1 according to the message. </p>
+        <!-- Explanation of TCP 3-way handshake phases -->
+        <ul>
+            <li><strong><span style="color: #00f0ff;">SYN (Synchronize Sequence Number):</span></strong> Firstly, the client sends SYN (Synchronize Sequence Number) message. This means that “I would like 
+                to start a TCP session with this sequence number!” After sending SYN, clients wait for a reply from the server. </li>
+            <li><strong><span style="color: #00f0ff;">SYN ACK message: </span> </strong> The server gets SYN message and replies with SYN ACK message. With this message it says that “This sequence number is OK for me!” </li>
+            <li><strong><span style="color: #00f0ff;">ACK message: </span></strong>Lastly, the client sends ACK message and they establish a reliable connection for data transfer with this TCP handshaking mechanism.[7]</li>
+        </ul><br>
+        
+        <h3> ‣ UDP(User Datagram Protocal)</h3>
+        <img src="assets/media/img4.jpg" alt="int">
+         <!-- Explanation of User Datagram Protocol (UDP) -->
+        <p>A common communication protocol on the Internet for time-sensitive transfers like DNS lookups and video playing is called User Datagram Protocol,
+            or UDP. By transferring data without first formally establishing a link, it speeds up communications. This makes it possible for data to be sent very fast, but it can also lead to packet loss in transit, 
+            which can be exploited by DDoS assaults.</p>
+             <!-- Further explanation of UDP -->
+        <p>Transmissions with UDP bypass the TCP protocol. Alternatively, one computer might just start transmitting data to the other.
+            Data may be transferred significantly more quickly via UDP than over TCP since
+             it doesn't require a "handshake" or a check to see if the data arrived correctly.
+             This speed does, however, come with costs. A UDP datagram cannot be resent if it is lost in transit. 
+             Applications using UDP thus need to be able to withstand loss, duplication, and mistakes.[10] </p>          
+<!-- Contact Information Section -->
+        <div class="contact-info">
+            <h2 style="text-align: center; text-decoration: underline; color: white;">Contact</h2>
+            <p><strong>Address:</strong> Dubai Silicon Oasis</p>
+            <p><strong>City:</strong> Dubai, UAE</p>
+            <p><strong>Postal Code:</strong> HP.O Box 341055</p>
+            <p><strong>Phone:</strong> +(971) 4 785 2000</p>
+            <p style="font-size: 15px;"><strong>Email:</strong> internet@gmail.com</p>            
+        </div>
+        
+    </main > 
+    <!-- Footer Section -->
+    <footer>
+        <p>Copyright &copy; Aamina, Yahavi & Tanzeel - 2023</p>
+    </footer>
+</body>
+</html>

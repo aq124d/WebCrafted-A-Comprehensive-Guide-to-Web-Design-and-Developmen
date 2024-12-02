@@ -1,0 +1,130 @@
+/* Applying a linear gradient background to the entire HTML */
+html{
+    background-image: linear-gradient(rgba(0, 0, 128, 0.875),#00f0ff);
+}
+
+/* Style for body, p, header, main */
+body {
+    font-family: "Lucida Grande", monospace; 
+    width:70%;
+    margin:auto;
+    color: #00f0ff;
+}
+
+p {
+    font-size:large;
+}
+
+h3 {
+    color: white;
+    text-decoration: underline;
+}
+
+ul{
+    font-size: large;
+    color: white;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px #00f0ff;
+    padding: 5px;
+}
+
+header a {
+    color: white;}
+
+
+header dl {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main {
+    background-color: black;
+    padding: 20px;
+    box-shadow: 0 0 10px #00f0ff;
+}
+
+/* Image styles */
+img{
+    display: flex;
+    float:right;
+    border: 1px solid;
+    padding: 3px;
+    border-radius: 4px;
+    margin:5px;
+}
+
+/* Contact info styles */
+.contact-info{
+    width: fit-content;
+    position:fixed;
+    right:0;
+    top:30%;
+    background-color: black;
+    padding: 5px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px #00f0ff;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    box-shadow: 0 0 10px #00f0ff;;
+}
+
+
+/* Media query for screens with a maximum width of 768px (mobile phones) */
+/* Styles for mobile phones */
+@media screen and (max-width: 768px) {
+    img {
+        width: 150px;
+        height: 170px;
+    }
+
+
+    /* Adjust font size for small screens */
+    p {
+        font-size: small;
+    }
+
+    li {
+        font-size: small;
+    }
+
+    .contact-info p {
+        font-size: xx-small;
+    }
+}
+
+
+/* Media query for screens with a width between 769px and 1023px (tablets) */
+/* Styles for tablets */
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+
+    img {
+        width: 190px;
+        height: 230px;
+    }
+
+    /* Adjust font size for medium screens */
+    p {
+        font-size: medium;
+    }
+
+    li {
+        font-size: medium;
+    }
+
+    .contact-info p {
+        font-size: small;
+    }
+}
